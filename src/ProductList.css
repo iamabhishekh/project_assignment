@@ -1,0 +1,36 @@
+/* App.css */
+.App {
+    text-align: center;
+  }
+  
+  .main-content {
+    padding: 20px;
+  }
+  
+  .product-list-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 20px;
+  }
+  
+  .product-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  .filter {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  @media (max-width: 768px) {
+    .product-list-container {
+      grid-template-columns: 1fr;
+    }
+  
+    .product-list {
+      grid-template-columns: 1fr;
+    }
+  }
+  
